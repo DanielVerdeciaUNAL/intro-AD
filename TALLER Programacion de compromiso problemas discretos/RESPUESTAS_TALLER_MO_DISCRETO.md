@@ -50,15 +50,13 @@ Distancias al ideal que sustentan la jerarquía:
 | A5: 4Runner SUV | 0,6867 | 0,3339 | 0,1667 |
 | A6: Sienna Minivan | 0,2758 | 0,1769 | 0,1540 |
 
-**Comparación de las soluciones.** Las tres métricas coinciden en el primer lugar: **A6: Sienna Minivan**, con distancias de 0,2758 (p=1), 0,1769 (p=2) y 0,1540 (p=infinito). Ninguno de sus criterios está en el peor valor. Su punto débil es el precio, con una distancia normalizada de 0,92, pero lo compensa con el menor costo de mantenimiento, la mejor seguridad, ocho plazas y una carga intermedia. El Corolla, el Corolla Híbrido, el Corolla Cross y el 4Runner tienen al menos un criterio en su peor valor, y eso los deja más lejos del ideal en las tres métricas.
+**Comparación de las soluciones.** El Sienna (A6) queda de primero con las tres métricas, con distancias de 0,2758 (p=1), 0,1769 (p=2) y 0,1540 (p=infinito). Su único punto flojo es el precio (distancia normalizada de 0,92), pero el mantenimiento más bajo, las cinco estrellas de seguridad y las ocho plazas lo compensan.
 
-El Grand Highlander (quinto en p=1 y p=2) y el 4Runner (sexto en ambas) ocupan los dos últimos lugares. Esto es coherente con el análisis de dominancia: el primero está dominado por el Sienna y el segundo tiene la menor seguridad, el mayor costo de combustible y el precio más alto.
+El Grand Highlander y el 4Runner quedan de quinto y sexto con p=1 y p=2. Tiene sentido: el Grand Highlander está dominado por el Sienna, y el 4Runner es el más caro, el que más gasta en combustible y el menos seguro. El Corolla y el Corolla Cross se alternan el segundo y el tercer puesto, pero con p=1 los separan solo 0,0024, así que prácticamente están empatados.
 
-Entre el Corolla y el Corolla Cross hay un cambio de orden. Con p=1 el Corolla queda segundo y el Corolla Cross tercero, pero la diferencia es de solo 0,0024, prácticamente un empate. Con p=2 el Corolla Cross pasa adelante, porque la métrica euclidiana penaliza más los desempeños extremos y el Corolla tiene dos criterios en su peor valor (carga y pasajeros) frente a uno del Corolla Cross (pasajeros).
+Con p=infinito la métrica casi no distingue. El Corolla, el Corolla Híbrido, el Corolla Cross y el 4Runner empatan en 0,1667, porque cada uno tiene algún criterio en su peor valor. El Grand Highlander figura segundo por una diferencia de 0,00009, que sale de 10 USD de precio frente al 4Runner y no es una ventaja real.
 
-La métrica p=infinito aporta poca información en este caso. Solo mide el criterio con peor desempeño, y como el Corolla, el Corolla Híbrido, el Corolla Cross y el 4Runner tienen al menos un criterio en su peor valor, los cuatro obtienen la misma distancia máxima de 1/6 (0,1667) y quedan empatados en el tercer puesto. El Grand Highlander aparece segundo solo por una diferencia de 0,00009, que proviene de que su precio está 10 USD por debajo del peor valor (el del 4Runner). Es un efecto de la normalización y no una ventaja real, porque el Sienna lo domina.
-
-**Conclusión.** Con pesos iguales el Sienna es la mejor alternativa de forma consistente. La conclusión es sólida porque las tres métricas la respaldan y porque el Sienna domina a una de las alternativas, mientras que ninguna lo domina a él.
+**Conclusión.** Con pesos iguales el Sienna es la mejor opción: gana con las tres métricas y ninguna alternativa lo domina.
 
 ## 3. Programación de compromiso con los pesos del decisor
 
